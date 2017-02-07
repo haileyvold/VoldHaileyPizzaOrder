@@ -19,40 +19,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="85dp" />
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
-
-        <RadioButton
-            android:text="Small ($7.00)"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioButtonSmall"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/radioGroup" />
-
-        <RadioButton
-            android:text="Medium ($9.00)"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/radioButtonSmall"
-            android:layout_alignStart="@+id/radioButtonSmall"
-            android:layout_marginTop="12dp"
-            android:id="@+id/radioButtonMedium" />
-
-        <RadioButton
-            android:text="Large ($13.00)"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/radioButtonMedium"
-            android:layout_alignStart="@+id/radioButtonMedium"
-            android:layout_marginTop="11dp"
-            android:id="@+id/radioButtonLarge" />
-    </RadioGroup>
+        android:layout_marginBottom="85dp"
+        android:textSize="24sp" />
 
     <Button
         android:text="Calculate Total"
@@ -80,6 +48,39 @@
         android:id="@+id/checkBoxXtraCheese"
         android:layout_above="@+id/checkBoxDelivery"
         android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:text="Small ($7.00)"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/radioButtonSmall"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioGroup" />
+
+        <RadioButton
+            android:text="Medium ($9.00)"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/radioButtonSmall"
+            android:layout_alignStart="@+id/radioButtonSmall"
+            android:layout_marginTop="12dp"
+            android:id="@+id/radioButtonMedium" />
+
+        <RadioButton
+            android:text="Large ($13.00)"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/radioButtonMedium"
+            android:layout_alignStart="@+id/radioButtonMedium"
+            android:layout_marginTop="11dp"
+            android:id="@+id/radioButtonLarge" />
+    </RadioGroup>
 
     <CheckBox
         android:text="Delivery (add $2.50)"
